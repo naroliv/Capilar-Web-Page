@@ -29,19 +29,20 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10vw 5vw;
+  padding: 10px;
   background-color: #e6e8da;
   transition: 1s ease-out;
-  background-size: cover;
   z-index: 2;
 }
 
 .big{
-	bottom: 0%;
+	height: 100%;
 }
 
 .small{
-	bottom: 90%;
+	height: 100px;
+	
+	
 }
 
 .header > img{
@@ -96,21 +97,16 @@ p{
 
 .contenido{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 10vw;
+	font-size: 1em;
 	font-weight: bold;
-	text-align: center;
-	top: 0;
+	top: 100px;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	position: fixed;
-	color: #a900b2;
-
-	display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10vw 5vw;
+	color: #82866d;
+	display: block;
+  padding: 50px 25px;
   background-color: #e6e8da;
   transition: 1s ease-out;
   background-size: cover;

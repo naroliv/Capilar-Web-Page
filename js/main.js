@@ -6,7 +6,7 @@ window.onload = function(){
 	var contentItems = document.getElementsByClassName("contenido");
 	var indicator = document.getElementById("indicador");
 	var header = document.getElementsByClassName("header big")[0];
-	var reference = 4562 / 5;
+	var reference = 5334 / 4;
 	var yPage = 0;
 
 	
@@ -28,7 +28,6 @@ window.onload = function(){
 	document.body.onscroll = function(){
 		
 		yPage = Math.round(window.pageYOffset);
-		console.log(yPage);
 		clearTimeout(appearFunction);
 		if(yPage < reference * 5){
 			appearFunction = setTimeout(function(){
@@ -47,8 +46,15 @@ window.onload = function(){
 			if(i==0){
 				header.setAttribute("class", "header big");
 			}
+			
 		}
 		else{
+			if(i == contentItems.length -1){
+				console.log(yPage >= reference * i &&
+					yPage < reference * (i + 1));
+				console.log([reference * i, reference * (i + 1), yPage]);
+			}
+			
 			contentItems[i].setAttribute("class", "contenido disappear");
 			if(i==0){
 				header.setAttribute("class", "header small");
@@ -72,7 +78,6 @@ window.onload = function(){
 				nI.setAttribute("class","li");
 			}
 			navItem.setAttribute("class","li activo");
-			console.log(navItem.getAttribute("value"));
 			window.scrollTo(0,navItem.getAttribute("value") * reference + 1);
 			yPage = window.pageYOffset;
 
