@@ -5,6 +5,7 @@ window.onload = function(){
 	var navItems = nav.getElementsByTagName("li");
 	var contentItems = document.getElementsByClassName("contenido");
 	var indicator = document.getElementById("indicador");
+	var header = document.getElementsByClassName("header big")[0];
 	var reference = 4562 / 5;
 	var yPage = 0;
 
@@ -13,9 +14,8 @@ window.onload = function(){
 
 
 	var appearFunction;
-	alert(contentItems.length + "casds");
+	
 	for (var i = 1; i < contentItems.length; i++) {
-		
 		var node = document.createElement("li");
 		node.setAttribute("value",i);
 		nav.getElementsByTagName("ul")[0].appendChild(node);
@@ -44,9 +44,15 @@ window.onload = function(){
 		 yPage < reference * (i + 1))
 		{
 			contentItems[i].setAttribute("class","contenido appear");
+			if(i==0){
+				header.setAttribute("class", "header big");
+			}
 		}
 		else{
 			contentItems[i].setAttribute("class", "contenido disappear");
+			if(i==0){
+				header.setAttribute("class", "header small");
+			}
 		}
 	}
 		for (var i = 0; i < navItems.length; i++) {
