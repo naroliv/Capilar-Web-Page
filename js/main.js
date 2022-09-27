@@ -96,9 +96,6 @@ window.onload = function(){
 	// 	})
 	}
 
-	headerImage.onclick = function(){
-		header.setAttribute("class", "header disappear");
-	}
 
 	window.onresize = function () {
 	// 	scrollTo(0,999999);
