@@ -10,12 +10,10 @@
 
 body{
 	background-color: #FFFCF7;
-	font-size: 20px;
 	
 }
 
 .scroller{
-	margin-top:  var(--header-height);
 	overflow: auto;
 	height: 100vh;
 	scroll-snap-type: y mandatory;
@@ -30,32 +28,71 @@ body{
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
-	display: block;
-  padding: 50px 25px;
+  padding: 75px 75px;
   transition: 1s ease-out;
   background-size: cover;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+	background-size: 50%;
+  
 }
 
 .scroller > div:nth-child(odd){
 	background-color: #e6e8da;
-	color: #82866d;
+	background-color: #484b37;
+	color: #e6e8da;
+	background-position: right center;	
+	
 }
 
 .scroller > div:nth-child(even){
 	background-color:#82866d ;
 	color: #e6e8da;
+	text-align: right;
+	background-position: left center;
+	
 	
 }
 
+.scroller > div:nth-child(1){
+	background-image: url(../img/icono1.png);
+}
+
+.scroller > div:nth-child(2){
+	background-image: url(../img/icono2.png);
+}
+
+.scroller > div:nth-child(3){
+	background-image: url(../img/icono3.png);
+}
+
+.scroller > div:last-child{
+	/*height: 100%;*/
+}
+
+
 .scroller div > h1{
 	font-family: 'Dancing Script', cursive;
-	font-size: 4em;
+	font-size: 5em;
 }
 
 .scroller div > h1, h2{
-	width: 100%;
 	text-align: center;
+}
+
+.scroller div > p, li{
+	font-family: 'Josefin Slab', serif;
+	font-size: 1.5em;
+	margin-left: 5px;
+}
+
+.scroller div > .subt{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.scroller div:nth-child(even) > ul{
+	direction: rtl;
 }
 
 .header {
@@ -80,23 +117,14 @@ body{
   align-items: center;
   padding: 10px;
   background-color: #e6e8da;
-  transition: 1s ease-out;
+  transition: 1s ease-in-out;
   z-index: 2;
-}
-
-.big{
-	height: 100%;
-}
-
-.small{
-	height: calc(var(--header-height) + 5px);
-	
 }
 
 .header > img{
   height: 100%;
   max-height: 300px;
-  margin: 0;
+  margin: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,11 +170,12 @@ p{
 
 
 .appear{
+	width: 100%;
 	opacity: 100%;
 }
 
 .disappear{
-	opacity: 0%;
+	transform: translateX(100%);
 }
 
 

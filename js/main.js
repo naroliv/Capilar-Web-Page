@@ -5,7 +5,8 @@ window.onload = function(){
 	//var navItems = nav.getElementsByTagName("li");
 	var contentItems = document.getElementsByClassName("contenido");
 	var indicator = document.getElementById("indicador");
-	var header = document.getElementsByClassName("header small")[0];
+	var header = document.getElementsByClassName("header appear")[0];
+	var headerImage = header.getElementsByTagName("img")[0];
 	var reference = 2312 / 4;
 	var yPage = 0;
 
@@ -93,6 +94,10 @@ window.onload = function(){
 			
 			
 	// 	})
+	}
+
+	headerImage.onclick = function(){
+		header.setAttribute("class", "header disappear");
 	}
 
 	window.onresize = function () {
