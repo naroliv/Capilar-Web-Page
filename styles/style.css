@@ -23,12 +23,12 @@ body{
 .scroller > div{
 	
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1em;
+	font-size: 15px;
 	font-weight: bold;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
-  padding: 75px 75px;
+  padding: 8%;
   transition: 1s ease-out;
   background-size: cover;
   scroll-snap-align: start;
@@ -64,8 +64,8 @@ body{
 }
 
 .scroller > div:nth-child(1) > img{
-	height: 100%;
-  max-height: 400px;
+	width: 100%;
+  max-width: 400px;
 }
 
 
