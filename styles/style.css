@@ -87,14 +87,23 @@ body{
 	
 }
 
+.scroller > div:nth-child(5) > iframe{
+	width: 80vw;
+	height: 50vw;
+	max-width: 560px;
+	max-height: 315px;
+}
+
 .scroller > div:nth-child(6){
 	text-align: center;
 	
 }
 
+
+
 .scroller > div:nth-child(6) button{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	border-radius: 20px;
 	border-style: none;
 	padding: 20px;
@@ -102,6 +111,8 @@ body{
 	color:#e6e8da;
 	box-shadow: 10px 10px black;
 	transition: ease-in 1s;
+	margin: 50px;
+	cursor: pointer;
 	
 }
 
