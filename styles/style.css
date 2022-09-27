@@ -38,11 +38,14 @@ body{
   
 }
 
+
+
 .scroller > div:nth-child(even){
 	background-color: #e6e8da;
 	background-color: #484b37;
 	color: #e6e8da;
 	background-position: right center;	
+	text-align: left;
 	
 }
 
@@ -54,7 +57,6 @@ body{
 	
 	
 }
-
 .scroller > div:nth-child(1){
 	height: 100vh;
 	background-color: #e6e8da;
@@ -68,7 +70,6 @@ body{
   max-width: 400px;
 }
 
-
 .scroller > div:nth-child(2){
 	background-image: url(../img/icono1.png);
 }
@@ -80,10 +81,31 @@ body{
 .scroller > div:nth-child(4){
 	background-image: url(../img/icono3.png);
 }
-
-.scroller > div:last-child{
-	/*height: 100%;*/
+.scroller > div:nth-child(5){
+	background-image: url(../img/icono4.png);
+	text-align: center;
+	
 }
+
+.scroller > div:nth-child(6){
+	text-align: center;
+	
+}
+
+.scroller > div:nth-child(6) button{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3em;
+	border-radius: 20px;
+	border-style: none;
+	padding: 20px;
+	background-color: #82866d;
+	color:#e6e8da;
+	box-shadow: 10px 10px black;
+	transition: ease-in 1s;
+	
+}
+
+
 
 
 .scroller div > h1{
@@ -107,10 +129,6 @@ body{
 
 .scroller div:nth-child(odd) > ul{
 	direction: rtl;
-}
-
-body::-webkit-scrollbar{
-	display: none;
 }
 
 p{
@@ -156,19 +174,5 @@ p{
 	transform: translateX(100%);
 }
 
-
-
-#indicador{
-	position: fixed;
-	bottom: 30px;
-	text-align: center;
-	width: 100%;
-  font-family: Arial, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  transition: 1s ease-out;
-  animation: up-down 2s ease-in infinite;
-  
-}
 
 
