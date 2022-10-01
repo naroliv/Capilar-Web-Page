@@ -59,7 +59,7 @@ body{
 }
 .scroller > div:nth-child(1){
 	height: 100vh;
-	background-color: #e6e8da;
+	background-color: #c7cab7;
 	display: flex;
 	justify-content: center;
 	align-items: center;
